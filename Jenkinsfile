@@ -12,6 +12,7 @@ podTemplate(
     ]
 ) {
     node('build-pod') {
+	checkout scm
 	sh "env | sort"
     }
 }
